@@ -5,10 +5,10 @@ import (
 )
 
 // Version is this package's version.
-const Version = "0.0.1"
+const Version = "0.1.0"
 
 // DefaultRecoverHandler is a convenient recover handler which
-// simply returns "500 Internal server error".
+// simply returns "500 Internal Server Error".
 var DefaultRecoverHandler = http.HandlerFunc(func(res http.ResponseWriter, req *http.Request) {
 	res.WriteHeader(http.StatusInternalServerError)
 
